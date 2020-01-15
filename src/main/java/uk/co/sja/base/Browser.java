@@ -35,7 +35,7 @@ public class Browser extends Base {
         if (p.getProperty("browser").contains("chrome")) {
             System.setProperty("webdriver.chrome.driver", CHROME_EXECUTABLE_PATH);
             ChromeOptions options = new ChromeOptions();
-            //options.addArguments("--headless");
+            options.addArguments("--headless");
             driver = new ChromeDriver(options);
 
         } else if (p.getProperty("browser").contains("firefox")) {
