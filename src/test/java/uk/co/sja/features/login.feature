@@ -1,6 +1,6 @@
 Feature: Login
 
-  Scenario: Journey to username page
+  Scenario: Journey to signed in page
     Given I am on SJA home page
     And l click login register
     When I enter 'avajneles@gmail.com', 'liamtoh@1liam' and submit form

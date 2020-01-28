@@ -22,5 +22,4 @@ public class LoginDomain {
         assertEquals(expected, loginPage.getAccount());
         System.out.println(loginPage.getAccount());
     }
-
 }

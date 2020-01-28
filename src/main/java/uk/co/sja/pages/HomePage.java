@@ -30,4 +30,10 @@ public class HomePage extends Base {
         driver.findElement(login_register).click();
         return this;
     }
+
+    public HomePage basketUrl(){
+        driver.navigate().to(Settings.basketUrl);
+        return this;
+    }
+
 }

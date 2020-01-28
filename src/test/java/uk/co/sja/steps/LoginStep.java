@@ -1,24 +1,17 @@
 package uk.co.sja.steps;
 
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import uk.co.sja.domain.LoginDomain;
-import uk.co.sja.domain.RegisterDomain;
 import uk.co.sja.pages.HomePage;
 import uk.co.sja.pages.LoginPage;
-
-import java.io.IOException;
-
-import static org.junit.Assert.assertEquals;
 
 public class LoginStep {
 
     HomePage homePage = new HomePage();
     LoginDomain loginDomain = new LoginDomain();
     LoginPage loginPage = new LoginPage();
-
 
     @And("l click login register")
     public void lClickLoginRegisterLink () {
@@ -34,7 +27,5 @@ public class LoginStep {
     public void usernameIsDisplayedOnPage() {
         loginDomain.verifyUserAccount();
     }
-
-
 
 }
