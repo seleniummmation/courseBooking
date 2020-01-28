@@ -6,5 +6,3 @@ public class Settings {
 
     public static String registerUrl;
 }
-
-
