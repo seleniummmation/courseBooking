@@ -14,26 +14,25 @@ public class HomePage extends Base {
 
     private By login_register = By.className("js-modal-trigger");
 
-    public HomePage visit() throws IOException {
-       startBrowserSession();
+    public HomePage visit () throws IOException {
+        startBrowserSession();
         driver.get(Settings.siteUrl);
         ///driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
         return this;
     }
 
-    public HomePage registerUrl(){
+    public HomePage registerUrl () {
         driver.get(Settings.registerUrl);
         return this;
     }
 
-    public HomePage clickLoginRegisterLink() {
+    public HomePage clickLoginRegisterLink () {
         driver.findElement(login_register).click();
         return this;
     }
 
-    public HomePage basketUrl(){
+    public HomePage basketUrl () {
         driver.navigate().to(Settings.basketUrl);
         return this;
     }
-
 }

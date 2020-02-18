@@ -8,7 +8,6 @@ import uk.co.sja.pages.HomePage;
 
 public class CourseSteps {
 
-
         HomePage homePage = new HomePage();
         CourseDomain courseDomain = new CourseDomain();
         CoursePage coursePage = new CoursePage();
@@ -32,5 +31,4 @@ public class CourseSteps {
         public void courseSearchTitleIsDisplayed() {
                 courseDomain.verifyCourseSearch();
         }
-
 }

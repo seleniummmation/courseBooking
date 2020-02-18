@@ -14,5 +14,3 @@ Feature: Book a Course
     Scenario: Search for Just You course
       When I search for just you course 'Basic sports first aid', enter location 'London' and submit
       Then Course search title is displayed
-
-
