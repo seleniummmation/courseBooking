@@ -11,8 +11,8 @@ public class LoginDomain {
     public LoginDomain signIn ( String email, String password) throws InterruptedException {
 
         loginPage.enterEmail(email)
-                .pwrd(password)
-                .clickLogInButton();
+                 .pwrd(password)
+                 .clickLogInButton();
         Thread.sleep(Long.parseLong("15000"));
         return this;
     }

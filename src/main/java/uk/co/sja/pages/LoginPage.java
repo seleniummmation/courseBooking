@@ -33,9 +33,6 @@ public class LoginPage extends Base {
         public String getAccount() {
         //new WebDriverWait(driver, 300).until(ExpectedConditions.presenceOfElementLocated(pageTitle));
             WebElement account = driver.findElement(userAccount);
-
         return account.getText();
     }
-
 }
-
