@@ -23,13 +23,3 @@ Feature: Registration
       | firstname | lastname | companytype | jobtitle | company | email       | phonenumber | password | confirmpassword |
       | ola       | sonnie   | individual  | mr       | mySelf  | my@self.net | 098765432   | pass     | pass            |
       | olu       | tunde    | company     | Mr       | WeLearn | we@yu.com   | 12345678907 | passw    | passw           |
-
-
-
-
-
-
-
-
-
-

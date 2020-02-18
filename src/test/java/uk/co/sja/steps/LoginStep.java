@@ -18,14 +18,13 @@ public class LoginStep {
         homePage.clickLoginRegisterLink();
     }
 
-   @When("I enter {string}, {string} and submit form")
-    public void iEnterUsernamePasswordAndSubmitForm (String email, String password) throws InterruptedException {
-      loginDomain.signIn(email, password);
+    @When("I enter {string}, {string} and submit form")
+    public void iEnterUsernamePasswordAndSubmitForm ( String email, String password ) throws InterruptedException {
+        loginDomain.signIn(email, password);
     }
 
     @Then("account is displayed on page")
-    public void usernameIsDisplayedOnPage() {
+    public void usernameIsDisplayedOnPage () {
         loginDomain.verifyUserAccount();
     }
-
 }

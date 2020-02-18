@@ -21,5 +21,6 @@ public class ConfigReader {
 
         Settings.registerUrl= p.getProperty("registerUrl");
         Settings.siteUrl= p.getProperty("siteUrl");
+        Settings.basketUrl = p.getProperty("basketUrl");
     }
 }

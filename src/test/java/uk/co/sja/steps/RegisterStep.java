@@ -18,23 +18,23 @@ public class RegisterStep {
     RegisterDomain registerDomain = new RegisterDomain();
 
     @Given("I am on SJA home page")
-    public void iAmOnSJAHomePage() throws IOException {
+    public void iAmOnSJAHomePage () throws IOException {
         HomePage.visit();
     }
 
     @And("I register {string}, {string}, {string}, {string}, {string}, {string}, {string} {string}, {string} and submit form")
-    public void iRegisterFirstnameLastnameCompanytypeJobtitleCompanyEmailPhonenumberPasswordConfirmpasswordAndSubmitForm(String firstname, String lastname, String accounttype, String jobtitle, String company, String email, String phonenumber, String password, String confirmpassword) {
+    public void iRegisterFirstnameLastnameCompanytypeJobtitleCompanyEmailPhonenumberPasswordConfirmpasswordAndSubmitForm ( String firstname, String lastname, String accounttype, String jobtitle, String company, String email, String phonenumber, String password, String confirmpassword ) {
 
         registration(firstname, lastname, accounttype, jobtitle, company, email, phonenumber, password, confirmpassword);
     }
 
     @When("I navigate to registration page")
-    public void iNavigateToRegistrationPage() {
+    public void iNavigateToRegistrationPage () {
         HomePage.registerUrl();
     }
 
     @When("I complete registration {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string} and submit form")
-    public void iCompleteRegistrationFirstnameLastnameCompanytypeJobtitleCompanyEmailPasswordConfirmpasswordAndSubmitForm(String firstname, String lastname, String accounttype, String jobtitle, String company, String email, String phonenumber, String password, String confirmpassword) {
+    public void iCompleteRegistrationFirstnameLastnameCompanytypeJobtitleCompanyEmailPasswordConfirmpasswordAndSubmitForm ( String firstname, String lastname, String accounttype, String jobtitle, String company, String email, String phonenumber, String password, String confirmpassword ) {
 
         registration(firstname, lastname, accounttype, jobtitle, company, email, phonenumber, password, confirmpassword);
 
@@ -53,12 +53,12 @@ public class RegisterStep {
     }
 
     @Then("Register title is displayed")
-    public void registerTitleIsDisplayed() {
+    public void registerTitleIsDisplayed () {
         String expected = "Register";
         assertEquals(expected, RegisterPage.getPageTitle());
     }
 
-    private void registration(String firstname, String lastname, String accounttype, String jobtitle, String company, String email, String phonenumber, String password, String confirmpassword) {
+    private void registration ( String firstname, String lastname, String accounttype, String jobtitle, String company, String email, String phonenumber, String password, String confirmpassword ) {
         registerDomain.registerAccount(firstname, lastname, accounttype, jobtitle, company, email, phonenumber, password, confirmpassword);
     }
 }
